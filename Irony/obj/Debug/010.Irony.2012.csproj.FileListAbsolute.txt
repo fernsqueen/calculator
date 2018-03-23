@@ -1,0 +1,13 @@
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\bin\Debug\Irony.dll
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\bin\Debug\Irony.pdb
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\obj\Debug\010.Irony.2012.csprojResolveAssemblyReference.cache
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\obj\Debug\Irony.Resources.resources
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\obj\Debug\010.Irony.2012.csproj.GenerateResource.Cache
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\obj\Debug\Irony.dll
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Irony\obj\Debug\Irony.pdb
+D:\Projects\CALCULATOR\Irony\obj\Debug\Irony.Resources.resources
+D:\Projects\CALCULATOR\Irony\obj\Debug\010.Irony.2012.csproj.GenerateResource.Cache
+D:\Projects\CALCULATOR\Irony\obj\Debug\Irony.dll
+D:\Projects\CALCULATOR\Irony\obj\Debug\Irony.pdb
+D:\Projects\CALCULATOR\Irony\bin\Debug\Irony.dll
+D:\Projects\CALCULATOR\Irony\bin\Debug\Irony.pdb
