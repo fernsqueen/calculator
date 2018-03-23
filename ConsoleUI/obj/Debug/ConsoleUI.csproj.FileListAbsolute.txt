@@ -1,0 +1,12 @@
+D:\Projects\GraphicsEditor (1)\GraphicsEditor\ConsoleUI\bin\Debug\ConsoleUI.dll.config
+D:\Projects\GraphicsEditor (1)\GraphicsEditor\ConsoleUI\bin\Debug\ConsoleUI.dll
+D:\Projects\GraphicsEditor (1)\GraphicsEditor\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\Projects\GraphicsEditor (1)\GraphicsEditor\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
+D:\Projects\GraphicsEditor (1)\GraphicsEditor\ConsoleUI\obj\Debug\ConsoleUI.dll
+D:\Projects\GraphicsEditor (1)\GraphicsEditor\ConsoleUI\obj\Debug\ConsoleUI.pdb
+D:\Projects\CALCULATOR\ConsoleUI\bin\Debug\ConsoleUI.dll.config
+D:\Projects\CALCULATOR\ConsoleUI\bin\Debug\ConsoleUI.dll
+D:\Projects\CALCULATOR\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\Projects\CALCULATOR\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
+D:\Projects\CALCULATOR\ConsoleUI\obj\Debug\ConsoleUI.dll
+D:\Projects\CALCULATOR\ConsoleUI\obj\Debug\ConsoleUI.pdb
