@@ -1,0 +1,17 @@
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\CALCULATOR.exe.config
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\CALCULATOR.exe
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\CALCULATOR.pdb
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\ConsoleUI.dll
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\ConsoleUI.pdb
+D:\Projects\CALCULATOR\CALCULATOR\obj\Debug\CALCULATOR.csprojResolveAssemblyReference.cache
+D:\Projects\CALCULATOR\CALCULATOR\obj\Debug\CALCULATOR.exe
+D:\Projects\CALCULATOR\CALCULATOR\obj\Debug\CALCULATOR.pdb
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\ClassLibrary1.dll
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\Irony.dll
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\Irony.GrammarExplorer.exe
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\Irony.Interpreter.dll
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\FastColoredTextBox.dll
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\ClassLibrary1.pdb
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\Irony.GrammarExplorer.pdb
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\Irony.pdb
+D:\Projects\CALCULATOR\CALCULATOR\bin\Debug\Irony.Interpreter.pdb
