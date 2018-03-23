@@ -1,0 +1,12 @@
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\bin\Debug\Refal.dll
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\bin\Debug\Refal.pdb
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\bin\Debug\Irony.dll
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\bin\Debug\Irony.Interpreter.dll
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\bin\Debug\Irony.Interpreter.pdb
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\bin\Debug\Irony.pdb
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\obj\Debug\Refal.2012.csprojResolveAssemblyReference.cache
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\obj\Debug\Refal.dll
+D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages\Refal\obj\Debug\Refal.pdb
+D:\Projects\CALCULATOR\Languages\Refal\obj\Debug\Refal.2012.csprojResolveAssemblyReference.cache
+D:\Projects\CALCULATOR\Languages\Refal\obj\Debug\Refal.dll
+D:\Projects\CALCULATOR\Languages\Refal\obj\Debug\Refal.pdb
