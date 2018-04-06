@@ -30,7 +30,7 @@ public class ExpressionGrammar : Grammar
                                           expression + binaryOperator + expression;
         funcExpression.Rule = sin | cos | ln;
         unaryMinus.Rule = ToTerm("-");
-        sin.Rule = ToTerm("sin") + ToTerm("(") + constantExpression + ToTerm(")");
+        sin.Rule = ToTerm("sin") + ToTerm("(") + expression + ToTerm(")");
         cos.Rule = ToTerm("cos") + ToTerm("(")+ expression + ToTerm(")");
         ln.Rule = ToTerm("ln") + ToTerm("(") + expression + ToTerm(")");
 
