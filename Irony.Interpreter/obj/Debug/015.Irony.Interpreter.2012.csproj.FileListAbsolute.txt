@@ -12,3 +12,10 @@ D:\Projects\CALCULATOR\Irony.Interpreter\bin\Debug\Irony.pdb
 D:\Projects\CALCULATOR\Irony.Interpreter\obj\Debug\015.Irony.Interpreter.2012.csprojResolveAssemblyReference.cache
 D:\Projects\CALCULATOR\Irony.Interpreter\obj\Debug\Irony.Interpreter.dll
 D:\Projects\CALCULATOR\Irony.Interpreter\obj\Debug\Irony.Interpreter.pdb
+D:\Calc\calc\Irony.Interpreter\bin\Debug\Irony.Interpreter.dll
+D:\Calc\calc\Irony.Interpreter\bin\Debug\Irony.Interpreter.pdb
+D:\Calc\calc\Irony.Interpreter\bin\Debug\Irony.dll
+D:\Calc\calc\Irony.Interpreter\bin\Debug\Irony.pdb
+D:\Calc\calc\Irony.Interpreter\obj\Debug\015.Irony.Interpreter.2012.csprojResolveAssemblyReference.cache
+D:\Calc\calc\Irony.Interpreter\obj\Debug\Irony.Interpreter.dll
+D:\Calc\calc\Irony.Interpreter\obj\Debug\Irony.Interpreter.pdb

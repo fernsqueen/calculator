@@ -43,22 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equation\OldQuadraticEquation.cs" />
-    <Compile Include="Equation\EquationCommand.cs" />
-    <Compile Include="Equation\IEquation.cs" />
-    <Compile Include="Equation\QuadraticEquation.cs" />
-    <Compile Include="GrammarTest.cs" />
+    <Compile Include="ExprGrammar\ExpressionGrammar.cs" />
+    <Compile Include="Expressions\BinaryOperator.cs" />
+    <Compile Include="Expressions\ConstantExpression.cs" />
+    <Compile Include="Expressions\FuncExpression.cs" />
+    <Compile Include="Expressions\IExpression.cs" />
+    <Compile Include="Expressions\NameExpression.cs" />
+    <Compile Include="NameTable\NamesTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Expressions\UnaryOperator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{0c378961-6310-4ae4-a703-bc901bd2045a}</Project>
-      <Name>ClassLibrary1</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ConsoleUI\ConsoleUI.csproj">
       <Project>{67c36b1e-7e87-4af5-a579-ef84e2ba71d5}</Project>
       <Name>ConsoleUI</Name>
