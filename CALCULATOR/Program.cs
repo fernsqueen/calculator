@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleUI;
-using CALCULATOR.Equation;
 
 namespace CALCULATOR
 {
@@ -17,7 +16,6 @@ namespace CALCULATOR
             var app = new Application();
 
             app.AddCommand(new ExitCommand(app));
-            app.AddCommand(new EquationCommand(app));
 
             app.Run(Console.In);
 
