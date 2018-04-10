@@ -8,16 +8,31 @@ namespace CALCULATOR.Expression
 {
     class NamesTable
     {
-        public readonly List<IExpression> names;
-
-        public void AddName(IExpression name)
+        public readonly List<string> names;
+        private List<IExpression> roots;
+      
+        public bool TryAddName(string name, IExpression root)
         {
-            this.names.Add(name);
+            if (NameSearch(name) != null) return false;
+            names.Add(name);
+            roots.Add(root);
+            return true;
         }
 
-        public void RemoveName(IExpression name)
+        public bool TryRemoveName(string name)
         {
-            this.names.Remove(name);
+            if (NameSearch(name) == null) return false;
+            int indexOfName = names.IndexOf(name);
+            names.RemoveAt(indexOfName);
+            roots.RemoveAt(indexOfName);
+            return true;
+        }
+
+        public IExpression NameSearch(string name)
+        {
+            int indexOfName = names.IndexOf(name);
+            if (indexOfName < 0) return null;
+            return roots[indexOfName];
         }
     }
 }
