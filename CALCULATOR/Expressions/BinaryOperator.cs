@@ -30,6 +30,14 @@ namespace CALCULATOR.Expression
             this.Name = name;
             this.Left = left;
             this.Right = right;
+            this.ChildNodes.Add(Left);
+            this.ChildNodes.Add(Right);
+        }
+
+        public List<IExpression> ChildNodes
+        {
+            get;
+            private set;
         }
 
     }

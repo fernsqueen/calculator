@@ -79,11 +79,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="fmGrammarExplorer.cs" />
+    <Compile Include="fmGrammarExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fmGrammarExplorer.Designer.cs">
       <DependentUpon>fmGrammarExplorer.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmSelectGrammars.cs" />
+    <Compile Include="fmSelectGrammars.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fmSelectGrammars.Designer.cs">
       <DependentUpon>fmSelectGrammars.cs</DependentUpon>
     </Compile>
@@ -126,7 +130,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="fmShowException.cs" />
+    <Compile Include="fmShowException.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fmShowException.Designer.cs">
       <DependentUpon>fmShowException.cs</DependentUpon>
     </Compile>
