@@ -10,19 +10,11 @@ namespace CALCULATOR.Expound
     class Expound
     {
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="root"></param>
-        /// <param name="parent"></param>
-        /// <returns></returns>
-        public bool IsPartOfAST(string name, IExpression root, ref IExpression parent) /// мб без bool
+        public bool IsPartOfAST(string name, IExpression root, ref IExpression parent)
         {
             try
             {
                 FuncExpression root1 = (FuncExpression)root;
-                /// в функцию вынести потом
                 foreach (var child in root1.ChildNodes)
                 {
                     if (child.GetType() == typeof(NameExpression))
@@ -47,7 +39,6 @@ namespace CALCULATOR.Expound
             try
             {
                 UnaryOperator root1 = (UnaryOperator)root;
-                /// в функцию вынести потом
                 foreach (var child in root1.ChildNodes)
                 {
                     if (child.GetType() == typeof(NameExpression))
@@ -72,7 +63,6 @@ namespace CALCULATOR.Expound
             try
             {
                 BinaryOperator root1 = (BinaryOperator)root;
-                /// в функцию вынести потом
                 foreach (var child in root1.ChildNodes)
                 {
                     if (child.GetType() == typeof(NameExpression))
@@ -93,8 +83,6 @@ namespace CALCULATOR.Expound
             catch
             {
             }
-
-
 
             if (parent != null) return true; 
             return false;
