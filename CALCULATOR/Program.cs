@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleUI;
+using CALCULATOR.Expression;
+using CALCULATOR.Expound;
 
 namespace CALCULATOR
 {
@@ -14,8 +16,10 @@ namespace CALCULATOR
             ////var gr_test = new GrammarTest();
             /////gr_test.TestGr();
             var app = new Application();
+            var namesTable = new NamesTable();
 
             app.AddCommand(new ExitCommand(app));
+            app.AddCommand(new ExpoundCommand(namesTable));
 
             app.Run(Console.In);
 

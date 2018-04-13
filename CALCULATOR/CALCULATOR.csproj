@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Expound\Expound.cs" />
     <Compile Include="Expound\ExpoundCommand.cs" />
     <Compile Include="ExprGrammar\ExpressionGrammar.cs" />
     <Compile Include="Expressions\BinaryOperator.cs" />

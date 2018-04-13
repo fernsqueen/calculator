@@ -34,10 +34,20 @@ namespace CALCULATOR.Expression
             this.ChildNodes.Add(Right);
         }
 
-        public List<IExpression> ChildNodes
+        public List<IExpression> ChildNodes = new List<IExpression>();
+
+        public void ExpoundArgument(IExpression newArgument, string argumentName)
         {
-            get;
-            private set;
+            if (Left.GetType() == typeof(NameExpression))
+            {
+                NameExpression left = (NameExpression)Left;
+                if (left.Name == argumentName)
+                {
+                    this.Left = newArgument;
+                    return;
+                }
+            }
+            this.Right = newArgument;
         }
 
     }

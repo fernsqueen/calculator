@@ -18,3 +18,10 @@ D:\Calc\calc\Irony\obj\Debug\Irony.Resources.resources
 D:\Calc\calc\Irony\obj\Debug\010.Irony.2012.csproj.GenerateResource.Cache
 D:\Calc\calc\Irony\obj\Debug\Irony.dll
 D:\Calc\calc\Irony\obj\Debug\Irony.pdb
+D:\Calc\calc\calc\Irony\bin\Debug\Irony.dll
+D:\Calc\calc\calc\Irony\bin\Debug\Irony.pdb
+D:\Calc\calc\calc\Irony\obj\Debug\010.Irony.2012.csprojResolveAssemblyReference.cache
+D:\Calc\calc\calc\Irony\obj\Debug\Irony.Resources.resources
+D:\Calc\calc\calc\Irony\obj\Debug\010.Irony.2012.csproj.GenerateResource.Cache
+D:\Calc\calc\calc\Irony\obj\Debug\Irony.dll
+D:\Calc\calc\calc\Irony\obj\Debug\Irony.pdb

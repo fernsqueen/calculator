@@ -29,10 +29,11 @@ namespace CALCULATOR.Expression
             this.ChildNodes.Add(right);
         }
 
-        public List<IExpression> ChildNodes
+        public readonly List<IExpression> ChildNodes = new List<IExpression>();
+
+        public void ExpoundArgument(IExpression newArgument)
         {
-            get;
-            private set;
+            this.Right = newArgument;
         }
     }
 }

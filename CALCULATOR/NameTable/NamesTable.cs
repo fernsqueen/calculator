@@ -8,8 +8,8 @@ namespace CALCULATOR.Expression
 {
     class NamesTable
     {
-        public readonly List<string> names;
-        private List<IExpression> roots;
+        public readonly List<string> names = new List<string>();
+        private List<IExpression> roots = new List<IExpression>();
       
         public bool TryAddName(string name, IExpression root)
         {

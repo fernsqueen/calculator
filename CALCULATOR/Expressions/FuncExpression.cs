@@ -26,13 +26,15 @@ namespace CALCULATOR.Expression
         {
             this.Name = name;
             this.Argument = argument;
+            this.ChildNodes = new List<IExpression>();
             this.ChildNodes.Add(argument);
         }
 
-        public List<IExpression> ChildNodes
+        public readonly List<IExpression> ChildNodes;
+
+        public void ExpoundArgument(IExpression newArgument)
         {
-            get;
-            private set;
+            this.Argument = newArgument;
         }
 
     }

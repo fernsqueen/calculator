@@ -16,3 +16,9 @@ D:\Calc\calc\ConsoleUI\bin\Debug\ConsoleUI.pdb
 D:\Calc\calc\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
 D:\Calc\calc\ConsoleUI\obj\Debug\ConsoleUI.dll
 D:\Calc\calc\ConsoleUI\obj\Debug\ConsoleUI.pdb
+D:\Calc\calc\calc\ConsoleUI\bin\Debug\ConsoleUI.dll.config
+D:\Calc\calc\calc\ConsoleUI\bin\Debug\ConsoleUI.dll
+D:\Calc\calc\calc\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\Calc\calc\calc\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
+D:\Calc\calc\calc\ConsoleUI\obj\Debug\ConsoleUI.dll
+D:\Calc\calc\calc\ConsoleUI\obj\Debug\ConsoleUI.pdb
