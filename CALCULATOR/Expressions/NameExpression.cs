@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CALCULATOR.Expound;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace CALCULATOR.Expression
         public NameExpression(string name)
         {
             this.Name = name;
+        }
+
+        public void Accept(Visitior v)
+        {
+            v.VisitName(this);
         }
     }
 }

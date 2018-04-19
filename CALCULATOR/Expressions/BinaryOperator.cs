@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CALCULATOR.Expound;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +49,11 @@ namespace CALCULATOR.Expression
                 }
             }
             this.Right = newArgument;
+        }
+
+        public void Accept(Visitior v)
+        {
+            v.VisitBinary(this);
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CALCULATOR.Expound;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expression
 {
-    class ConstantExpression<T> : IExpression
+    class ConstantExpression : IExpression
     {
         public string Representation()
         {
@@ -23,6 +24,11 @@ namespace CALCULATOR.Expression
         public ConstantExpression(string name)
         {
             this.Name = name;
+        }
+
+        public void Accept(Visitior v)
+        {
+            v.VisitConst(this);
         }
     }
 }

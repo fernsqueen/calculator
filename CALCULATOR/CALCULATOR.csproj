@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Expound\Expound.cs" />
     <Compile Include="Expound\ExpoundCommand.cs" />
+    <Compile Include="Expound\ExpoundVisitor.cs" />
+    <Compile Include="Visitor\Visitior.cs" />
     <Compile Include="ExprGrammar\ExpressionGrammar.cs" />
     <Compile Include="Expressions\BinaryOperator.cs" />
     <Compile Include="Expressions\ConstantExpression.cs" />

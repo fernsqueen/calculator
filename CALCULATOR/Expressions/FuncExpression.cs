@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CALCULATOR.Expound;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,11 @@ namespace CALCULATOR.Expression
         public void ExpoundArgument(IExpression newArgument)
         {
             this.Argument = newArgument;
+        }
+
+        public void Accept(Visitior v)
+        {
+            v.VisitFunc(this);
         }
 
     }
