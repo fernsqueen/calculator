@@ -9,24 +9,29 @@ namespace CALCULATOR.Expound
 {
     abstract class Visitior
     {
-        virtual public void VisitName(NameExpression expression)
+        virtual public IExpression VisitName(NameExpression expression)
         {
+            return null;
         }
 
-        virtual public void VisitFunc(FuncExpression expression)
+        virtual public IExpression VisitFunc(FuncExpression expression)
         {
+            return null;
         }
 
-        virtual public void VisitConst(ConstantExpression expression)
+        virtual public IExpression VisitConst(ConstantExpression expression)
         {
+            return null;
         }
 
-        virtual public void VisitBinary(BinaryOperator expression)
+        virtual public IExpression VisitBinary(BinaryOperator expression)
         {
+            return null;
         }
 
-        virtual public void VisitUnary(UnaryOperator expression)
+        virtual public IExpression VisitUnary(UnaryOperator expression)
         {
+            return null;
         }
     }
 }

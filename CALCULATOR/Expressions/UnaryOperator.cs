@@ -39,9 +39,9 @@ namespace CALCULATOR.Expression
             this.ChildNodes.Add(newArgument);
         }
 
-        public void Accept(Visitior v)
+        public IExpression Accept(Visitior v)
         {
-            v.VisitUnary(this);
+            return v.VisitUnary(this);
         }
     }
 }

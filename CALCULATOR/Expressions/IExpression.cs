@@ -11,6 +11,6 @@ namespace CALCULATOR
     {
         string Representation();
         IExpression Clone();
-        void Accept(Visitior v);
+        IExpression Accept(Visitior v);
     }
 }

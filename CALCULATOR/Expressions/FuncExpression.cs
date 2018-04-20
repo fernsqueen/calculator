@@ -40,9 +40,9 @@ namespace CALCULATOR.Expression
             this.ChildNodes.Add(newArgument);
         }
 
-        public void Accept(Visitior v)
+        public IExpression Accept(Visitior v)
         {
-            v.VisitFunc(this);
+            return v.VisitFunc(this);
         }
 
     }

@@ -37,29 +37,25 @@ namespace CALCULATOR.Expression
 
         public List<IExpression> ChildNodes = new List<IExpression>();
 
-        public void ExpoundArgument(IExpression newArgument, string argumentName)
+        public void ExpoundArgument(IExpression newArgument, int index)
         {
-            if (Left.GetType() == typeof(NameExpression))
+
+            if (index == 0)
             {
-                NameExpression left = (NameExpression)Left;
-                if (left.Name == argumentName)
-                {
-                    this.Left = newArgument;
-                    this.ChildNodes.Clear();
-                    this.ChildNodes.Add(Left);
-                    this.ChildNodes.Add(Right);
-                    return;
-                }
+                this.Left = newArgument;
             }
-            this.Right = newArgument;
+            else
+            {
+                this.Right = newArgument;
+            }
             this.ChildNodes.Clear();
             this.ChildNodes.Add(Left);
             this.ChildNodes.Add(Right);
         }
 
-        public void Accept(Visitior v)
+        public IExpression Accept(Visitior v)
         {
-            v.VisitBinary(this);
+            return v.VisitBinary(this);
         }
 
     }

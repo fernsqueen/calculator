@@ -9,64 +9,40 @@ namespace CALCULATOR.Expound
 {
     class ExpoundVisitor : Visitior
     {
-        public override void VisitName(NameExpression expression)
+        public override IExpression VisitName(NameExpression expression)
         {
-            return;
+            if (thisNamesTable.NameSearch(expression.Name) != null)
+            {
+                thisNamesTable.NameSearch(expression.Name).Accept(this);
+                return thisNamesTable.NameSearch(expression.Name);
+            }
+            else return expression;
         }
 
-        public override void VisitFunc(FuncExpression expression)
+        public override IExpression VisitFunc(FuncExpression expression)
         {
-            if (expression.ChildNodes[0].GetType() == typeof(NameExpression))
-            {
-                NameExpression child = (NameExpression)expression.ChildNodes[0];
-                IExpression newArgument = thisNamesTable.NameSearch(child.Name);
-                if (newArgument != null)
-                {
-                    expression.ExpoundArgument(newArgument);
-                    expression.ChildNodes[0].Accept(this);
-                }
-            }
-            expression.ChildNodes[0].Accept(this);
+            expression.ExpoundArgument(expression.ChildNodes[0].Accept(this));
+            return expression;
         }
 
-        public override void VisitConst(ConstantExpression expression)
+        public override IExpression VisitConst(ConstantExpression expression)
         {
-            return;
+            return expression;
         }
 
-        public override void VisitBinary(BinaryOperator expression)
+        public override IExpression VisitBinary(BinaryOperator expression)
         {
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i<2; i++)
             {
-                if (expression.ChildNodes[i].GetType() == typeof(NameExpression))
-                {
-                    NameExpression child = (NameExpression)expression.ChildNodes[i];
-                    IExpression newArgument = thisNamesTable.NameSearch(child.Name);
-                    if (newArgument != null)
-                    {
-                        expression.ExpoundArgument(newArgument, child.Name);
-                    }
-                }
+                expression.ExpoundArgument(expression.ChildNodes[i].Accept(this), i); /// переписать метод
             }
-            foreach (var child in expression.ChildNodes)
-            {
-                child.Accept(this);
-            }
+            return expression;
         }
 
-        public override void VisitUnary(UnaryOperator expression)
+        public override IExpression VisitUnary(UnaryOperator expression)
         {
-            if (expression.ChildNodes[0].GetType() == typeof(NameExpression))
-            {
-                NameExpression child = (NameExpression)expression.ChildNodes[0];
-                IExpression newArgument = thisNamesTable.NameSearch(child.Name);
-                if (newArgument != null)
-                {
-                    expression.ExpoundArgument(newArgument);
-                    expression.ChildNodes[0].Accept(this);
-                }
-            }
-            expression.ChildNodes[0].Accept(this);
+            expression.ExpoundArgument(expression.ChildNodes[0].Accept(this));
+            return expression;
         }
 
         NamesTable thisNamesTable { get; set; }

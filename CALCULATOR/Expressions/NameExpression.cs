@@ -26,9 +26,9 @@ namespace CALCULATOR.Expression
             this.Name = name;
         }
 
-        public void Accept(Visitior v)
+        public IExpression Accept(Visitior v)
         {
-            v.VisitName(this);
+            return v.VisitName(this);
         }
     }
 }
