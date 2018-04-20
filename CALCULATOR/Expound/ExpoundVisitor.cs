@@ -34,7 +34,7 @@ namespace CALCULATOR.Expound
         {
             for (int i = 0; i<2; i++)
             {
-                expression.ExpoundArgument(expression.ChildNodes[i].Accept(this), i); /// переписать метод
+                expression.ExpoundArgument(expression.ChildNodes[i].Accept(this), i); 
             }
             return expression;
         }
