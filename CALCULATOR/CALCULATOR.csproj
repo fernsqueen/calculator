@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Expound\Expound.cs" />
     <Compile Include="Expound\ExpoundCommand.cs" />
     <Compile Include="Expound\ExpoundVisitor.cs" />
     <Compile Include="Visitor\Visitior.cs" />

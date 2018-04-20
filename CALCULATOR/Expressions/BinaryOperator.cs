@@ -45,10 +45,16 @@ namespace CALCULATOR.Expression
                 if (left.Name == argumentName)
                 {
                     this.Left = newArgument;
+                    this.ChildNodes.Clear();
+                    this.ChildNodes.Add(Left);
+                    this.ChildNodes.Add(Right);
                     return;
                 }
             }
             this.Right = newArgument;
+            this.ChildNodes.Clear();
+            this.ChildNodes.Add(Left);
+            this.ChildNodes.Add(Right);
         }
 
         public void Accept(Visitior v)

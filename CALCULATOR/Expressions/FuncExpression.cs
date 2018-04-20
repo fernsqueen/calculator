@@ -36,6 +36,8 @@ namespace CALCULATOR.Expression
         public void ExpoundArgument(IExpression newArgument)
         {
             this.Argument = newArgument;
+            this.ChildNodes.RemoveAt(0);
+            this.ChildNodes.Add(newArgument);
         }
 
         public void Accept(Visitior v)

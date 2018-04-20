@@ -27,15 +27,13 @@ namespace CALCULATOR.Expound
         }
         public void Execute(params string[] parameters)
         {
-            var expound = new Expound();
-
-            namesTable.TryAddName("y", new FuncExpression("sin", new BinaryOperator("+", new ConstantExpression("2"), new NameExpression("x"))));
+            namesTable.TryAddName("y", new FuncExpression("sin", new BinaryOperator("+", new NameExpression("z"), new NameExpression("x"))));
             namesTable.TryAddName("x", new FuncExpression("cos", new NameExpression("t")));
+            namesTable.TryAddName("t", new ConstantExpression("10"));
 
             var visitor = new ExpoundVisitor(namesTable);
             namesTable.TryAddName("y1", namesTable.NameSearch("y"));
-            namesTable.NameSearch("y1").Accept(visitor);
-    
+            namesTable.NameSearch("y1").Accept(visitor);   
         }
     }
 }

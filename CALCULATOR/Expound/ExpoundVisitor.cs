@@ -16,20 +16,17 @@ namespace CALCULATOR.Expound
 
         public override void VisitFunc(FuncExpression expression)
         {
-            foreach (var child in expression.ChildNodes)
+            if (expression.ChildNodes[0].GetType() == typeof(NameExpression))
             {
-                if (child.GetType() == typeof(NameExpression))
+                NameExpression child = (NameExpression)expression.ChildNodes[0];
+                IExpression newArgument = thisNamesTable.NameSearch(child.Name);
+                if (newArgument != null)
                 {
-                    NameExpression child1 = (NameExpression)child;
-                    IExpression newArgument = thisNamesTable.NameSearch(child1.Name);
-                    if (newArgument != null)
-                    {
-                        expression.ExpoundArgument(newArgument);
-                    }
+                    expression.ExpoundArgument(newArgument);
+                    expression.ChildNodes[0].Accept(this);
                 }
-
-                child.Accept(this);
             }
+            expression.ChildNodes[0].Accept(this);
         }
 
         public override void VisitConst(ConstantExpression expression)
@@ -39,38 +36,37 @@ namespace CALCULATOR.Expound
 
         public override void VisitBinary(BinaryOperator expression)
         {
-            foreach (var child in expression.ChildNodes)
+            for (int i = 0; i < 2; i++)
             {
-                if (child.GetType() == typeof(NameExpression))
+                if (expression.ChildNodes[i].GetType() == typeof(NameExpression))
                 {
-                    NameExpression child1 = (NameExpression)child;
-                    IExpression newArgument = thisNamesTable.NameSearch(child1.Name);
+                    NameExpression child = (NameExpression)expression.ChildNodes[i];
+                    IExpression newArgument = thisNamesTable.NameSearch(child.Name);
                     if (newArgument != null)
                     {
-                        expression.ExpoundArgument(newArgument, child1.Name);
+                        expression.ExpoundArgument(newArgument, child.Name);
                     }
                 }
-
+            }
+            foreach (var child in expression.ChildNodes)
+            {
                 child.Accept(this);
             }
         }
 
         public override void VisitUnary(UnaryOperator expression)
         {
-            foreach (var child in expression.ChildNodes)
+            if (expression.ChildNodes[0].GetType() == typeof(NameExpression))
             {
-                if (child.GetType() == typeof(NameExpression))
+                NameExpression child = (NameExpression)expression.ChildNodes[0];
+                IExpression newArgument = thisNamesTable.NameSearch(child.Name);
+                if (newArgument != null)
                 {
-                    NameExpression child1 = (NameExpression)child;
-                    IExpression newArgument = thisNamesTable.NameSearch(child1.Name);
-                    if (newArgument != null)
-                    {
-                        expression.ExpoundArgument(newArgument);
-                    }
+                    expression.ExpoundArgument(newArgument);
+                    expression.ChildNodes[0].Accept(this);
                 }
-
-                child.Accept(this);
             }
+            expression.ChildNodes[0].Accept(this);
         }
 
         NamesTable thisNamesTable { get; set; }
