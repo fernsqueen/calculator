@@ -16,7 +16,7 @@ namespace CALCULATOR.Expound
             this.namesTable = namesTable;
         }
         public string Name { get { return "expound"; } }
-        public string Help { get { return "Подстановка переменной. Параметры: 1) в какое выражение подстановка 2) имя заменяемой переменной"; } }
+        public string Help { get { return "Подстановка значений переменных. Параметр - имя выражения."; } }
         public string[] Synonyms
         {
             get { return new string[] { " " }; }
@@ -33,7 +33,9 @@ namespace CALCULATOR.Expound
 
             var visitor = new ExpoundVisitor(namesTable);
             namesTable.TryAddName("y1", namesTable.NameSearch("y"));
-            namesTable.NameSearch("y1").Accept(visitor);   
+            namesTable.NameSearch("y1").Accept(visitor);
+
+            Console.WriteLine(namesTable.NameSearch("y1").Representation());
         }
     }
 }

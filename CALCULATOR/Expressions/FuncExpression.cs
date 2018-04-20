@@ -11,12 +11,12 @@ namespace CALCULATOR.Expression
     {
         public string Representation()
         {
-            return "";
+            return Name + "(" + Argument.Representation() + ")";
         }
 
         public IExpression Clone()
         {
-            return null;
+            return this;
         }
 
         public string Name { get; private set; }
