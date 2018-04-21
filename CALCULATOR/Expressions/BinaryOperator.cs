@@ -31,26 +31,6 @@ namespace CALCULATOR.Expression
             this.Name = name;
             this.Left = left;
             this.Right = right;
-            this.ChildNodes.Add(Left);
-            this.ChildNodes.Add(Right);
-        }
-
-        public List<IExpression> ChildNodes = new List<IExpression>();
-
-        public void ExpoundArgument(IExpression newArgument, int index)
-        {
-
-            if (index == 0)
-            {
-                this.Left = newArgument;
-            }
-            else
-            {
-                this.Right = newArgument;
-            }
-            this.ChildNodes.Clear();
-            this.ChildNodes.Add(Left);
-            this.ChildNodes.Add(Right);
         }
 
         public IExpression Accept(Visitior v)

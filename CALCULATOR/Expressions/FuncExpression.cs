@@ -27,17 +27,6 @@ namespace CALCULATOR.Expression
         {
             this.Name = name;
             this.Argument = argument;
-            this.ChildNodes = new List<IExpression>();
-            this.ChildNodes.Add(argument);
-        }
-
-        public readonly List<IExpression> ChildNodes;
-
-        public void ExpoundArgument(IExpression newArgument)
-        {
-            this.Argument = newArgument;
-            this.ChildNodes.RemoveAt(0);
-            this.ChildNodes.Add(newArgument);
         }
 
         public IExpression Accept(Visitior v)
