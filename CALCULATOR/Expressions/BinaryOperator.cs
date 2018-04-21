@@ -17,7 +17,7 @@ namespace CALCULATOR.Expression
 
         public IExpression Clone()
         {
-            return this;
+            return new BinaryOperator(Name, Left, Right);
         }
 
         public string Name { get; private set; }

@@ -16,7 +16,7 @@ namespace CALCULATOR.Expression
 
         public IExpression Clone()
         {
-            return this;
+            return new FuncExpression(Name, Argument);
         }
 
         public string Name { get; private set; }

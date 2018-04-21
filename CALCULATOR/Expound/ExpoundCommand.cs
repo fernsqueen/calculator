@@ -27,15 +27,21 @@ namespace CALCULATOR.Expound
         }
         public void Execute(params string[] parameters)
         {
-            namesTable.TryAddName("y", new FuncExpression("sin", new BinaryOperator("+", new NameExpression("z"), new NameExpression("x"))));
-            namesTable.TryAddName("x", new FuncExpression("cos", new NameExpression("t")));
-            namesTable.TryAddName("t", new ConstantExpression("10"));
+            var nameTable = new Dictionary<string, IExpression>();
+            nameTable["y"] = new FuncExpression("sin", new BinaryOperator("+", new NameExpression("z"), new NameExpression("x")));
+            nameTable["x"] = new FuncExpression("cos", new NameExpression("t"));
+            nameTable["t"] = new ConstantExpression("10");
 
-            var visitor = new ExpoundVisitor(namesTable);
-            namesTable.TryAddName("y1", namesTable.NameSearch("y"));
-            namesTable.NameSearch("y1").Accept(visitor);
+            IExpression y1 = null;
+            nameTable.TryGetValue("y", out y1);
+            nameTable["y1"] = y1;
 
-            Console.WriteLine(namesTable.NameSearch("y1").Representation());
+            var visitor = new ExpoundVisitor(nameTable);
+
+
+            Console.WriteLine(y1.Accept(visitor).Representation());
+
+
         }
     }
 }

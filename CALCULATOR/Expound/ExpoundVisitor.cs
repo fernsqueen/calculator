@@ -11,45 +11,42 @@ namespace CALCULATOR.Expound
     {
         public override IExpression VisitName(NameExpression expression)
         {
-            if (thisNamesTable.NameSearch(expression.Name) != null)
+            IExpression name = expression;
+            if (NameTable.TryGetValue(expression.Name, out name))
             {
-                thisNamesTable.NameSearch(expression.Name).Accept(this);
-                return thisNamesTable.NameSearch(expression.Name);
+                return name.Clone().Accept(this);
             }
-            else return expression;
+            else
+            {
+                return expression.Clone();
+            }
         }
 
         public override IExpression VisitFunc(FuncExpression expression)
         {
-            expression.ExpoundArgument(expression.ChildNodes[0].Accept(this));
-            return expression;
+            return new FuncExpression(expression.Name, expression.Argument.Accept(this));
         }
 
         public override IExpression VisitConst(ConstantExpression expression)
         {
-            return expression;
+            return expression.Clone();
         }
 
         public override IExpression VisitBinary(BinaryOperator expression)
         {
-            for (int i = 0; i<2; i++)
-            {
-                expression.ExpoundArgument(expression.ChildNodes[i].Accept(this), i); 
-            }
-            return expression;
+            return new BinaryOperator(expression.Name, expression.Left.Clone().Accept(this), expression.Right.Clone().Accept(this));
         }
 
         public override IExpression VisitUnary(UnaryOperator expression)
         {
-            expression.ExpoundArgument(expression.ChildNodes[0].Accept(this));
-            return expression;
+            return new UnaryOperator(expression.Name, expression.Right.Clone().Accept(this));
         }
 
-        NamesTable thisNamesTable { get; set; }
+        Dictionary<string, IExpression> NameTable { get; set; }
 
-        public ExpoundVisitor(NamesTable namesTable)
+        public ExpoundVisitor(Dictionary<string, IExpression> namesTable)
         {
-            thisNamesTable = namesTable;
+            NameTable = namesTable;
         }
     }
 }
