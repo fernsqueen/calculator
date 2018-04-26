@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Expound\ExpoundCommand.cs" />
     <Compile Include="Expound\ExpoundVisitor.cs" />
+    <Compile Include="Trigonometry\TrigonometricFormulas.cs" />
     <Compile Include="Visitor\Visitior.cs" />
     <Compile Include="ExprGrammar\ExpressionGrammar.cs" />
     <Compile Include="Expressions\BinaryOperator.cs" />
