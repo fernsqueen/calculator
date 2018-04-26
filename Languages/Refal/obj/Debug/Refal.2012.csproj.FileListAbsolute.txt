@@ -10,3 +10,12 @@ D:\Projects\CALCULATOR\Irony-gtksharp-explorer\Irony-gtksharp-explorer\Languages
 D:\Projects\CALCULATOR\Languages\Refal\obj\Debug\Refal.2012.csprojResolveAssemblyReference.cache
 D:\Projects\CALCULATOR\Languages\Refal\obj\Debug\Refal.dll
 D:\Projects\CALCULATOR\Languages\Refal\obj\Debug\Refal.pdb
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\Refal.dll
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\Refal.pdb
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\Irony.dll
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\Irony.Interpreter.dll
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\Irony.Interpreter.pdb
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\Irony.pdb
+D:\Calc\calc\calc\Languages\Refal\obj\Debug\Refal.2012.csprojResolveAssemblyReference.cache
+D:\Calc\calc\calc\Languages\Refal\obj\Debug\Refal.dll
+D:\Calc\calc\calc\Languages\Refal\obj\Debug\Refal.pdb

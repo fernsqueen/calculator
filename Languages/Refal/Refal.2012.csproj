@@ -80,6 +80,10 @@
     <None Include="RefalAstNodes.cd" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CALCULATOR\CALCULATOR.csproj">
+      <Project>{202930fb-701b-4ddf-8fa8-2b26e1799b08}</Project>
+      <Name>CALCULATOR</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Irony.Interpreter\015.Irony.Interpreter.2012.csproj">
       <Project>{321A7F5D-00C2-4095-9970-075CDEE8C139}</Project>
       <Name>015.Irony.Interpreter.2012</Name>
