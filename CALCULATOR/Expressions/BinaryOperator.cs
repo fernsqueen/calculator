@@ -14,7 +14,7 @@ namespace CALCULATOR.Expression
         {
             if ((Name == "+") || (Name == "-"))
             {
-                return "(" + Left.Representation() + Name + Right.Representation() + ")";
+                return "(" + Left.Clone().Representation() + Name + Right.Clone().Representation() + ")";
             }
 
             return Left.Representation() + Name + Right.Representation();

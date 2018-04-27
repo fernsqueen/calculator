@@ -47,6 +47,7 @@
     <Compile Include="Expound\ExpoundCommand.cs" />
     <Compile Include="Expound\ExpoundVisitor.cs" />
     <Compile Include="Trigonometry\AddDivVisitor.cs" />
+    <Compile Include="Trigonometry\DoubleAngleVisitor.cs" />
     <Compile Include="Trigonometry\SinCosQuadrateVisitor.cs" />
     <Compile Include="Visitor\Visitior.cs" />
     <Compile Include="ExprGrammar\ExpressionGrammar.cs" />

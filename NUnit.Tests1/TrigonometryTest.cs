@@ -41,9 +41,28 @@ namespace NUnit.Tests1
         [Test]
         public void TestSinCosQuadrate()
         {
+            var visitor = new SinCosQuadrateVisitor();
             var y = new BinaryOperator("^", new FuncExpression("sin", new NameExpression("x")), new ConstantExpression("2"));
-            ///var y1 = trigonometry.SinQuadrate(y);
+            var y1 = y.Accept(visitor);
+            Console.WriteLine("{0} => {1}", y.Representation(), y1.Representation());
 
+            var x = new BinaryOperator("^", new FuncExpression("cos", new NameExpression("x")), new ConstantExpression("2"));
+            var x1 = x.Accept(visitor);
+            Console.WriteLine("{0} => {1}", x.Representation(), x1.Representation());
+        }
+
+        [Test]
+        public void DoubleAngle()
+        {
+            var visitor = new DoubleAngleVisitor();
+
+            var y = new FuncExpression("sin", new BinaryOperator("*", new ConstantExpression("2"), new NameExpression("z")));
+            var y1 = y.Accept(visitor);
+            Console.WriteLine("{0} => {1}", y.Representation(), y1.Representation());
+
+            var x = new FuncExpression("cos", new BinaryOperator("*", new ConstantExpression("2"), new NameExpression("y")));
+            var x1 = x.Accept(visitor);
+            Console.WriteLine("{0} => {1}", x.Representation(), x1.Representation());
         }
     }
 }

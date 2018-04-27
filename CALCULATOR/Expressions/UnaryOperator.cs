@@ -16,7 +16,7 @@ namespace CALCULATOR.Expression
 
         public IExpression Clone()
         {
-            return new UnaryOperator(Name, Right);
+            return new UnaryOperator(Name, Right.Clone());
         }
 
         public string Name { get; private set; }

@@ -27,13 +27,19 @@ namespace CALCULATOR.Trigonometry
 
         public override IExpression VisitBinary(BinaryOperator expression)
         {
-            /* return new BinaryOperator("/", new BinaryOperator("-", new ConstantExpression("1"),
+            FuncExpression func = (FuncExpression)expression.Left;
+            if (func.Name == "sin")
+            {
+                return new BinaryOperator("/", new BinaryOperator("-", new ConstantExpression("1"),
                 new FuncExpression("cos", new BinaryOperator("*", new ConstantExpression("2"),
-                expression.Argument))), new ConstantExpression("2"));
-            return new BinaryOperator("/", new BinaryOperator("+", new ConstantExpression("1"),
-    new FuncExpression("cos", new BinaryOperator("*", new ConstantExpression("2"),
-    expression.Argument))), new ConstantExpression("2"));
-            */
+                func.Accept(this)))), new ConstantExpression("2"));
+            }
+            if (func.Name == "cos")
+            {
+                return new BinaryOperator("/", new BinaryOperator("+", new ConstantExpression("1"),
+                new FuncExpression("cos", new BinaryOperator("*", new ConstantExpression("2"),
+                func.Accept(this)))), new ConstantExpression("2"));
+            }
             return null;
         }
 
