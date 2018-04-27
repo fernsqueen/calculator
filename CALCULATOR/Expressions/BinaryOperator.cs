@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expression
 {
-    class BinaryOperator : IExpression
+    public class BinaryOperator : IExpression
     {
 
         public string Representation()
         {
+            if ((Name == "+") || (Name == "-"))
+            {
+                return "(" + Left.Representation() + Name + Right.Representation() + ")";
+            }
+
             return Left.Representation() + Name + Right.Representation();
         }
 

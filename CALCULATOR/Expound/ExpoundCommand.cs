@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expound
 {
-    class ExpoundCommand : ICommand
+    public class ExpoundCommand : ICommand
     {
         NamesTable namesTable;
         public ExpoundCommand(NamesTable namesTable)

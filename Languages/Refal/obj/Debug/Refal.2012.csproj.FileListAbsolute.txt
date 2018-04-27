@@ -19,3 +19,7 @@ D:\Calc\calc\calc\Languages\Refal\bin\Debug\Irony.pdb
 D:\Calc\calc\calc\Languages\Refal\obj\Debug\Refal.2012.csprojResolveAssemblyReference.cache
 D:\Calc\calc\calc\Languages\Refal\obj\Debug\Refal.dll
 D:\Calc\calc\calc\Languages\Refal\obj\Debug\Refal.pdb
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\CALCULATOR.exe
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\ConsoleUI.dll
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\CALCULATOR.pdb
+D:\Calc\calc\calc\Languages\Refal\bin\Debug\ConsoleUI.pdb

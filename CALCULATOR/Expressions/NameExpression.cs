@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expression
 {
-    class NameExpression : IExpression
+    public class NameExpression : IExpression
     {
         public string Representation()
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expound
 {
-    class ExpoundVisitor : Visitior
+    public class ExpoundVisitor : Visitior
     {
         public override IExpression VisitName(NameExpression expression)
         {

@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using CALCULATOR;
+using CALCULATOR.Expression;
+using CALCULATOR.Expound;
 
 namespace NUnit.Tests1
 {
@@ -9,7 +11,7 @@ namespace NUnit.Tests1
     public class TestClass
     {
         [Test]
-        public void TestMethod()
+        public void ExpoundTest()
         {
             var nameTable = new Dictionary<string, IExpression>();
             nameTable["y"] = new FuncExpression("sin", new BinaryOperator("+", new NameExpression("z"), new NameExpression("x")));
@@ -18,12 +20,21 @@ namespace NUnit.Tests1
 
             IExpression y1 = null;
             nameTable.TryGetValue("y", out y1);
-            nameTable["y1"] = y1;
+            nameTable["y1"] = y1.Clone();
 
             var visitor = new ExpoundVisitor(nameTable);
 
-
             Console.WriteLine(y1.Accept(visitor).Representation());
+            nameTable.TryGetValue("y", out y1);
+            Console.WriteLine(y1.Representation());
+            nameTable.TryGetValue("x", out y1);
+            Console.WriteLine(y1.Representation());
+            nameTable.TryGetValue("t", out y1);
+            Console.WriteLine(y1.Representation());
+
+
+
+
         }
     }
 }

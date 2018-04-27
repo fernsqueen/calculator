@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expound
 {
-    abstract class Visitior
+    public abstract class Visitior
     {
         virtual public IExpression VisitName(NameExpression expression)
         {

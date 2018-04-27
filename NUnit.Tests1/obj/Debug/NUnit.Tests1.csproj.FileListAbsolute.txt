@@ -1,1 +1,13 @@
 D:\Calc\calc\calc\NUnit.Tests1\obj\Debug\NUnit.Tests1.csprojResolveAssemblyReference.cache
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\NUnit.Tests1.dll
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\NUnit.Tests1.pdb
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\CALCULATOR.exe
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\nunit.framework.dll
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\Irony.dll
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\ConsoleUI.dll
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\CALCULATOR.pdb
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\nunit.framework.xml
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\Irony.pdb
+D:\Calc\calc\calc\NUnit.Tests1\bin\Debug\ConsoleUI.pdb
+D:\Calc\calc\calc\NUnit.Tests1\obj\Debug\NUnit.Tests1.dll
+D:\Calc\calc\calc\NUnit.Tests1\obj\Debug\NUnit.Tests1.pdb

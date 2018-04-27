@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CALCULATOR.Expression
 {
-    class NamesTable
+    public class NamesTable
     {
         public readonly List<string> names = new List<string>();
         private List<IExpression> roots = new List<IExpression>();
