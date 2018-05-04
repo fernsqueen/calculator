@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ConsoleUI;
 using CALCULATOR.Expression;
 using CALCULATOR.Expound;
+using CALCULATOR.Calculation;
 
 namespace CALCULATOR
 {
@@ -13,8 +14,6 @@ namespace CALCULATOR
     {
         static void Main(string[] args)
         {
-            ////var gr_test = new GrammarTest();
-            /////gr_test.TestGr();
             var app = new Application();
             var namesTable = new NamesTable();
 

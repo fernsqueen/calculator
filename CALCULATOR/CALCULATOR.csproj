@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculation\Calculate.cs" />
+    <Compile Include="Calculation\CalculationVisitor.cs" />
     <Compile Include="Expound\ExpoundCommand.cs" />
     <Compile Include="Expound\ExpoundVisitor.cs" />
     <Compile Include="Trigonometry\AddDivVisitor.cs" />
